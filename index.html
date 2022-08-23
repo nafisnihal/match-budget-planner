@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Best Five</title>
+    <title>Best Five in the World</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -12,9 +12,144 @@
     />
   </head>
   <body>
-    <h1>BEST FIVE IN THE WORLD</h1>
+    <header class="py-5 bg-black">
+      <h1 class="text-center fs-1 fw-bold text-white py-5">
+        BEST FIVE IN THE WORLD
+      </h1>
+    </header>
+    <main class="bg-dark">
+      <div class="row container">
+        <div class="py-5 bg-dark col-10">
+          <div class="row row-cols-3 gy-5">
+            <div class="col">
+              <div class="card bg-black" style="width: 18rem">
+                <img
+                  src="photos/messi.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Lionel Messi</h5>
+                  <p class="card-text text-dark">Goals:128 | Assist: 110</p>
+                  <p class="btn btn-primary w-100">Select</p>
+                </div>
+              </div>
+            </div>
 
-    
+            <div class="col">
+              <div class="card bg-black" style="width: 18rem">
+                <img src="photos/neymar.jpg" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Neymar Jr</h5>
+                  <p class="card-text text-dark">Goals:99 | Assist: 100</p>
+                  <p class="btn btn-primary w-100">Select</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card bg-black" style="width: 18rem">
+                <img src="photos/ramos.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Sergio Ramos</h5>
+                  <p class="card-text text-dark">Goals:50 | Assist: 90</p>
+                  <p class="btn btn-primary w-100">Select</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card bg-black" style="width: 18rem">
+                <img
+                  src="photos/Mauro-Icardi.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Mauro Icardi</h5>
+                  <p class="card-text text-dark">Goals:28 | Assist: 60</p>
+                  <p class="btn btn-primary w-100">Select</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card bg-black" style="width: 18rem">
+                <img
+                  src="photos/Leandro-Paredes.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Leandro Paredes</h5>
+                  <p class="card-text text-dark">Goals:89 | Assist: 45</p>
+                  <p class="btn btn-primary w-100">Select</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card bg-black" style="width: 18rem">
+                <img src="photos/hakimi.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title text-white">Achraf Hakimi</h5>
+                  <p class="card-text text-dark">Goals:48 | Assist: 47</p>
+                  <p class="btn btn-primary w-100">Select</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-2 p-5 mb-5">
+          <div
+            class="card text-center bg-black text-white h-30"
+            style="width: 18rem"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Selected 5</h5>
+              <ul class="">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+            </div>
+          </div>
+          <div class="card bg-black text-white h-60 mt-5" style="width: 18rem">
+            <div class="card-body">
+              <h5 class="card-title text-center mb-4">Budget</h5>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="d-inline">Per Player</p>
+              <input class="d-inline w-50" type="text" />
+              </div>
+              <p class="btn btn-primary my-3 w-100">Calculate</p>
+
+              <div class="mb-1 d-flex justify-content-between">
+                <p class="d-inline">Player Expense:</p>
+                <p class="d-inline text-end">ytue</p>
+              </div>
+
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="d-inline">Manager</p>
+              <input class="w-50 ms-3 mb-3" type="text" />
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <p class="d-inline">Coach</p>
+              <input class="d-inline w-50 ms-3" type="text" />
+              </div>
+              <p class="btn btn-primary my-3 w-100">Calculate Total</p>
+
+              <div class="d-flex justify-content-between">
+                <p class="d-inline">Total:</p>
+                <p class="text-danger d-inline">5654</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"

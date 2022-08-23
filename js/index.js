@@ -20,7 +20,7 @@ function selectedFive(playerName, playerButton) {
     let selectedAmount = selectedFinalList.length;
 
     if (selectedAmount > 5) {
-      window.alert("number exceeded");
+      window.alert("You can not add more than five");
       createList.removeChild(createElement);
       return;
     }
@@ -58,6 +58,12 @@ document
   .addEventListener("click", function () {
 
     const playerExpense = document.getElementById("player-expense-result");
-    const manager
+    const managerExpense = document.getElementById("manager-expense");
+    const coachExpense = document.getElementById("manager-expense");
+    const totalExpense = document.getElementById("total-expense");
+
+    const totalExpenseString = parseFloat(playerExpense.innerText) + parseFloat(managerExpense.value) + parseFloat(coachExpense.value);
+
+    totalExpense.innerText = parseFloat(totalExpenseString);
 
   });

@@ -29,9 +29,13 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Lionel Messi</h5>
+                  <h5 id="messi-name" class="card-title text-white">
+                    Lionel Messi
+                  </h5>
                   <p class="card-text text-dark">Goals:128 | Assist: 110</p>
-                  <p class="btn btn-primary w-100">Select</p>
+                  <button id="messi-select-btn" class="btn btn-primary w-100">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -40,9 +44,13 @@
               <div class="card bg-black" style="width: 18rem">
                 <img src="photos/neymar.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Neymar Jr</h5>
+                  <h5 id="neymar-name" class="card-title text-white">
+                    Neymar Jr
+                  </h5>
                   <p class="card-text text-dark">Goals:99 | Assist: 100</p>
-                  <p class="btn btn-primary w-100">Select</p>
+                  <button id="neymar-select-btn" class="btn btn-primary w-100">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -51,9 +59,13 @@
               <div class="card bg-black" style="width: 18rem">
                 <img src="photos/ramos.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Sergio Ramos</h5>
+                  <h5 id="ramos-name" class="card-title text-white">
+                    Sergio Ramos
+                  </h5>
                   <p class="card-text text-dark">Goals:50 | Assist: 90</p>
-                  <p class="btn btn-primary w-100">Select</p>
+                  <button id="ramos-select-btn" class="btn btn-primary w-100">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -66,9 +78,13 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Mauro Icardi</h5>
+                  <h5 id="icardi-name" class="card-title text-white">
+                    Mauro Icardi
+                  </h5>
                   <p class="card-text text-dark">Goals:28 | Assist: 60</p>
-                  <p class="btn btn-primary w-100">Select</p>
+                  <button id="icardi-select-btn" class="btn btn-primary w-100">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -81,9 +97,13 @@
                   alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Leandro Paredes</h5>
+                  <h5 id="paredes-name" class="card-title text-white">
+                    Leandro Paredes
+                  </h5>
                   <p class="card-text text-dark">Goals:89 | Assist: 45</p>
-                  <p class="btn btn-primary w-100">Select</p>
+                  <button id="paredes-select-btn" class="btn btn-primary w-100">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -92,9 +112,13 @@
               <div class="card bg-black" style="width: 18rem">
                 <img src="photos/hakimi.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title text-white">Achraf Hakimi</h5>
+                  <h5 id="hakimi-name" class="card-title text-white">
+                    Achraf Hakimi
+                  </h5>
                   <p class="card-text text-dark">Goals:48 | Assist: 47</p>
-                  <p class="btn btn-primary w-100">Select</p>
+                  <button id="hakimi-select-btn" class="btn btn-primary w-100">
+                    Select
+                  </button>
                 </div>
               </div>
             </div>
@@ -107,13 +131,7 @@
           >
             <div class="card-body text-start">
               <h5 class="card-title text-center">Selected 5</h5>
-              <ol class="list-group list-group-numbered bg-black">
-                <li class="list-group-item bg-black text-white"></li>
-                <li class="list-group-item bg-black text-white"></li>
-                <li class="list-group-item bg-black text-white"></li>
-                <li class="list-group-item bg-black text-white"></li>
-                <li class="list-group-item bg-black text-white"></li>
-              </ol>
+              <ol id="selected-list" class="list list-numbered bg-black"></ol>
             </div>
           </div>
           <div class="card bg-black text-white h-60 mt-5" style="width: 18rem">
@@ -121,13 +139,13 @@
               <h5 class="card-title text-center mb-4">Budget</h5>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="d-inline">Per Player</p>
-                <input class="d-inline w-50" type="text" />
+                <input  id="per-player-field" class="d-inline w-50" type="text" />
               </div>
-              <p class="btn btn-primary my-3 w-100">Calculate</p>
+              <button id="calculate-btn" class="btn btn-primary my-3 w-100">Calculate</button>
 
               <div class="mb-1 d-flex justify-content-between">
                 <p class="d-inline">Player Expense:</p>
-                <p class="d-inline text-end">ytue</p>
+                <p class="d-inline text-end">$<span id="player-expense-result">000</span></p>
               </div>
 
               <div class="d-flex justify-content-between align-items-center">
@@ -138,11 +156,11 @@
                 <p class="d-inline">Coach</p>
                 <input class="d-inline w-50 ms-3" type="text" />
               </div>
-              <p class="btn btn-primary my-3 w-100">Calculate Total</p>
+              <p id="calculate-total-btn" class="btn btn-primary my-3 w-100">Calculate Total</p>
 
               <div class="d-flex justify-content-between">
                 <p class="d-inline">Total:</p>
-                <p class="text-danger d-inline">5654</p>
+                <p class="text-danger d-inline">$<span>000</span></p>
               </div>
             </div>
           </div>

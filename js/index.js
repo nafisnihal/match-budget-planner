@@ -56,14 +56,17 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
 document
   .getElementById("calculate-total-btn")
   .addEventListener("click", function () {
-
-    const playerExpense = document.getElementById("player-expense-result");
+    const playerExpenseForTotal = document.getElementById(
+      "player-expense-result"
+    );
     const managerExpense = document.getElementById("manager-expense");
-    const coachExpense = document.getElementById("manager-expense");
+    const coachExpense = document.getElementById("coach-expense");
     const totalExpense = document.getElementById("total-expense");
 
-    const totalExpenseString = parseFloat(playerExpense.innerText) + parseFloat(managerExpense.value) + parseFloat(coachExpense.value);
+    const totalExpenseString =
+      parseFloat(playerExpenseForTotal.innerText) +
+      parseFloat(managerExpense.value) +
+      parseFloat(coachExpense.value);
 
     totalExpense.innerText = parseFloat(totalExpenseString);
-
   });

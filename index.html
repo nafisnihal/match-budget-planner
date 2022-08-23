@@ -19,6 +19,7 @@
     </header>
     <main class="bg-dark">
       <div class="row container">
+        <!-- players -->
         <div class="py-5 bg-dark col-10">
           <div class="row row-cols-3 gy-5">
             <div class="col">
@@ -39,7 +40,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col">
               <div class="card bg-black" style="width: 18rem">
                 <img src="photos/neymar.jpg" class="card-img-top" alt="..." />
@@ -54,7 +54,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col">
               <div class="card bg-black" style="width: 18rem">
                 <img src="photos/ramos.png" class="card-img-top" alt="..." />
@@ -69,7 +68,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col">
               <div class="card bg-black" style="width: 18rem">
                 <img
@@ -88,7 +86,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col">
               <div class="card bg-black" style="width: 18rem">
                 <img
@@ -107,7 +104,6 @@
                 </div>
               </div>
             </div>
-
             <div class="col">
               <div class="card bg-black" style="width: 18rem">
                 <img src="photos/hakimi.png" class="card-img-top" alt="..." />
@@ -124,6 +120,7 @@
             </div>
           </div>
         </div>
+        <!-- selected 5 -->
         <div class="col-2 p-5 mb-5">
           <div
             class="card text-center bg-black text-white h-30"
@@ -134,40 +131,63 @@
               <ol id="selected-list" class="list list-numbered bg-black"></ol>
             </div>
           </div>
+          <!-- player expense -->
           <div class="card bg-black text-white h-60 mt-5" style="width: 18rem">
             <div class="card-body">
               <h5 class="card-title text-center mb-4">Budget</h5>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="d-inline">Per Player</p>
-                <input  id="per-player-field" class="d-inline w-50" type="text" />
+                <input
+                  id="per-player-field"
+                  class="d-inline w-50"
+                  type="text"
+                />
               </div>
-              <button id="calculate-btn" class="btn btn-primary my-3 w-100">Calculate</button>
+              <button id="calculate-btn" class="btn btn-primary my-3 w-100">
+                Calculate
+              </button>
 
               <div class="mb-1 d-flex justify-content-between">
                 <p class="d-inline">Player Expense:</p>
-                <p class="d-inline text-end">$<span id="player-expense-result">000</span></p>
+                <p class="d-inline text-end">
+                  $<span id="player-expense-result">000</span>
+                </p>
               </div>
-
+              <!--calculate total -->
               <div class="d-flex justify-content-between align-items-center">
                 <p class="d-inline">Manager</p>
-                <input id="manager-expense" class="w-50 ms-3 mb-3" type="text" />
+                <input
+                  id="manager-expense"
+                  class="w-50 ms-3 mb-3"
+                  type="text"
+                />
               </div>
               <div class="d-flex justify-content-between align-items-center">
                 <p class="d-inline">Coach</p>
-                <input id="coach-expense" class="d-inline w-50 ms-3" type="text" />
+                <input
+                  id="coach-expense"
+                  class="d-inline w-50 ms-3"
+                  type="text"
+                />
               </div>
-              <p id="calculate-total-btn" class="btn btn-primary my-3 w-100">Calculate Total</p>
+              <p id="calculate-total-btn" class="btn btn-primary my-3 w-100">
+                Calculate Total
+              </p>
 
               <div class="d-flex justify-content-between">
                 <p class="d-inline">Total:</p>
-                <p class="text-danger d-inline">$<span id="total-expense">000</span></p>
+                <p class="text-danger d-inline">
+                  $<span id="total-expense">000</span>
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
-
+    <footer class="bg-black text-dark py-5">
+      <p class="text-center">Player Selection & Budget Calculation</p>
+    </footer>
     <script src="js/index.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"

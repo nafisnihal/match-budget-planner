@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Best Five in the World</title>
+    <title>Match Budget Planner</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,16 +14,17 @@
   <body>
     <header class="py-5 bg-black">
       <h1 class="text-center fs-1 fw-bold text-white py-5">
-        BEST FIVE IN THE WORLD
+        Choose Your Best Five Here
       </h1>
+      <p class="text-center fw-bold text-white">Budget Planner For Your Match</p>
     </header>
     <main class="bg-dark">
-      <div class="row container">
+      <div class="row container ">
         <!-- players -->
-        <div class="py-5 bg-dark col-10">
-          <div class="row row-cols-3 gy-5">
+        <div class="py-5 bg-dark col-12 col-lg-10 ">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-5">
             <div class="col">
-              <div class="card bg-black" style="width: 18rem">
+              <div class="card bg-black mx-auto" style="width: 18rem">
                 <img
                   src="photos/messi.png"
                   class="card-img-top img-fluid w-100"
@@ -41,7 +42,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card bg-black" style="width: 18rem">
+              <div class="card bg-black mx-auto" style="width: 18rem">
                 <img src="photos/neymar.jpg" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 id="neymar-name" class="card-title text-white">
@@ -55,7 +56,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card bg-black" style="width: 18rem">
+              <div class="card bg-black mx-auto" style="width: 18rem">
                 <img src="photos/ramos.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 id="ramos-name" class="card-title text-white">
@@ -69,7 +70,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card bg-black" style="width: 18rem">
+              <div class="card bg-black mx-auto" style="width: 18rem">
                 <img
                   src="photos/Mauro-Icardi.png"
                   class="card-img-top"
@@ -87,7 +88,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card bg-black" style="width: 18rem">
+              <div class="card bg-black mx-auto" style="width: 18rem">
                 <img
                   src="photos/Leandro-Paredes.png"
                   class="card-img-top"
@@ -105,7 +106,7 @@
               </div>
             </div>
             <div class="col">
-              <div class="card bg-black" style="width: 18rem">
+              <div class="card bg-black mx-auto" style="width: 18rem">
                 <img src="photos/hakimi.png" class="card-img-top" alt="..." />
                 <div class="card-body">
                   <h5 id="hakimi-name" class="card-title text-white">
@@ -121,13 +122,13 @@
           </div>
         </div>
         <!-- selected 5 -->
-        <div class="col-2 p-5 mb-5">
+        <div class="col-lg-2 col-2  p-5 mb-5">
           <div
             class="card text-center bg-black text-white h-30"
             style="width: 18rem"
           >
             <div class="card-body text-start">
-              <h5 class="card-title text-center">Selected 5</h5>
+              <h5 class="card-title text-center">Selected</h5>
               <ol id="selected-list" class="list list-numbered bg-black"></ol>
             </div>
           </div>
